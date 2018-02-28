@@ -1,0 +1,30 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  pool: 15
+  reaping_frequency: 25
+  host: localhost
+  username: deploy
+  password: 'Welcome@123'
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  pool: 15
+  host: localhost
+  username: root
+  password: headerlabs
+  database: sample_app
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  pool: 15
+  host: localhost
+  username: root
+  password: headerlabs
+  database: sample_app
