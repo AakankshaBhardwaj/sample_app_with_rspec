@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'spec_helper'
+require 'aws-sdk-mock'
 
 RSpec.describe User, 'validation' do
   it {should ensure_length_of(:name).is_at_least(10)}
